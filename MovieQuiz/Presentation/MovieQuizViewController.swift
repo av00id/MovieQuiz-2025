@@ -1,11 +1,24 @@
 import UIKit
 
 final class MovieQuizViewController: UIViewController {
+    
+    @IBOutlet weak var yesButton: UIButton!
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setButtons()
+    }
+    
+    func setButtons() {
+        
+        yesButton.layer.masksToBounds = true
+        yesButton.layer.cornerRadius = 16
+        yesButton.titleLabel?.font = UIFont(name: "YSDisplay-Bold", size: 23)
     }
 }
+
 
 /*
  Mock-данные
