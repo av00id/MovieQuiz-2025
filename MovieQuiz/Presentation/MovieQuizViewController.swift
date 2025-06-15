@@ -3,7 +3,13 @@ import UIKit
 final class MovieQuizViewController: UIViewController {
     
     @IBOutlet weak var yesButton: UIButton!
+    @IBOutlet weak var noButton: UIButton!
     
+    @IBOutlet weak var inndexLabel: UILabel!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var questionLabel: UILabel!
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,8 +20,12 @@ final class MovieQuizViewController: UIViewController {
     func setButtons() {
         
         yesButton.layer.masksToBounds = true
-        yesButton.layer.cornerRadius = 16
-       // yesButton.titleLabel?.font = UIFont(name: "YSDisplay-Bold", size: 23)
+        yesButton.layer.cornerRadius = 15
+        noButton.layer.masksToBounds = true
+        noButton.layer.cornerRadius = 15
+        yesButton.titleLabel?.font = UIFont(name: "YSDisplay-Medium", size: 23)
+        noButton.titleLabel?.font = UIFont(name: "YSDisplay-Medium", size: 23)
+        //questionLabel.font = UIFont(name: "YSDisplay-Bold", size: 23)
     }
 }
 
