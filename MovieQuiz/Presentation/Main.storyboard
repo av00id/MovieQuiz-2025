@@ -42,7 +42,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yg3-1N-BWx" userLabel="previewImage">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yg3-1N-BWx" userLabel="previewImage">
                                         <rect key="frame" x="0.0" y="43.5" width="374" height="561"/>
                                         <color key="backgroundColor" name="YP White"/>
                                         <constraints>
@@ -74,6 +74,9 @@
                                                 <state key="normal" title="Нет">
                                                     <color key="titleColor" name="YP Black"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="noButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pb1-n4-Q3N"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNJ-aR-Ip8" userLabel="yesButton">
                                                 <rect key="frame" x="197" y="0.0" width="177" height="60"/>
@@ -84,6 +87,9 @@
                                                 <state key="normal" title="Да">
                                                     <color key="titleColor" name="YP Black"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="yesButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CIV-Wq-bp3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -103,13 +109,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="yg3-1N-BWx" id="kTR-v8-9kJ"/>
-                        <outlet property="indexLabel" destination="OcD-fs-YoY" id="A3X-bY-fbh"/>
-                        <outlet property="inndexLabel" destination="OcD-fs-YoY" id="17K-gv-DZO"/>
-                        <outlet property="noButton" destination="5Ee-lc-RkM" id="Z8v-Cn-baF"/>
-                        <outlet property="questionLabel" destination="fFJ-jj-9Pr" id="mqc-z9-ZmQ"/>
-                        <outlet property="questionTitleLabel" destination="Rzh-ba-cQh" id="EAE-Rw-VUm"/>
-                        <outlet property="yesButton" destination="eNJ-aR-Ip8" id="Lv4-BN-1Be"/>
+                        <outlet property="imageView" destination="yg3-1N-BWx" id="yp4-Vz-GA2"/>
+                        <outlet property="indexLabel" destination="OcD-fs-YoY" id="gYy-LG-7OL"/>
+                        <outlet property="noButton" destination="5Ee-lc-RkM" id="zTw-B4-5Ec"/>
+                        <outlet property="questionLabel" destination="fFJ-jj-9Pr" id="QSD-NU-W3a"/>
+                        <outlet property="questionTitleLabel" destination="Rzh-ba-cQh" id="2XK-Jn-qeU"/>
+                        <outlet property="yesButton" destination="eNJ-aR-Ip8" id="UsJ-5g-ILt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
